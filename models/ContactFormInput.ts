@@ -8,13 +8,24 @@ export interface IContactInputForm {
 	serviceDesired: ServicesOffered
 	companyName?: string
 	website?: string
+	email: string
+	phone?: string
 	createdAt?: Date
 }
 
 const contactInputFormSchema = new Schema<IContactInputForm>({
-	firstName: String,
-	lastName: String,
-	serviceDesired: String,
+	firstName: {
+		type: String,
+		required: true
+	},
+	lastName: {
+		type: String,
+		required: true
+	},
+	serviceDesired: {
+		type: String,
+		required: false
+	},
 	companyName: {
 		type: String,
 		required: false
@@ -23,9 +34,16 @@ const contactInputFormSchema = new Schema<IContactInputForm>({
 		type: String,
 		required: false
 	},
+	email: {
+		type: String,
+		required: true
+	},
+	phone: {
+		type: String,
+		required: false
+	},
 	createdAt: {
 		type: Date,
-		required: true,
 		default: new Date()
 	}
 })
