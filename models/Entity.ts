@@ -4,7 +4,7 @@ export interface IEntity {
 	_id?: string
 	userId: ObjectId | string
 	key: string
-	value: string
+	value?: string
 	createdAt: Date
 	updatedAt: Date
 }
