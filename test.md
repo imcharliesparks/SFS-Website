@@ -1,2 +1,3 @@
-# website
-Our website!
+## Website
+
+- This is our repo for our main website.
