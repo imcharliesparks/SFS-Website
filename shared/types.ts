@@ -79,3 +79,19 @@ export type CardButton = {
 	text: string
 	action: () => void
 }
+
+export enum ServicesOffered {
+	WEB = 'WEB',
+	NATIVE = 'NATIVE',
+	NOT_SURE = 'NOT_SURE'
+}
+
+export type ContactFormInput = {
+	firstName: string
+	lastName: string
+	serviceDesired: ServicesOffered
+	companyName?: string
+	website?: string
+	email: string
+	phone?: string
+}
