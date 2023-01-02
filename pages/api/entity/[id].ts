@@ -3,11 +3,14 @@ import { APIMethods, APIStatuses, AuthResponses, EntityReponses, GeneralAPIRespo
 import { Entity } from '../../../models/Entity'
 import { connectToMongoDB } from '../../../lib/db'
 import { getToken } from 'next-auth/jwt'
+import requestIp from 'request-ip'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 	const { method, body } = req
 	const { id } = req.query
 	const token = await getToken({ req }) // TODO: Extract this to a middleware
+	const detectedIp = requestIp.getClientIp(req)
+	console.log('detectedIp', detectedIp)
 
 	if (!token) {
 		return res.status(401).json({ status: APIStatuses.ERROR, type: AuthResponses.UNAUTHORIZED })
