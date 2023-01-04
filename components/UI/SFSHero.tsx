@@ -36,6 +36,38 @@ const SFSHero = () => {
 						</div>
 					</div>
 				</div>
+				<div className="py-6 border-t border-b border-gray-100 dark:border-gray-700">
+					<div className="container">
+						<h4 className="text-center text-2xl font-semibold text-gray-700 dark:text-gray-200">
+							We&apos;ve delivered software for companies like these
+						</h4>
+						<div className="grid md:grid-cols-3 justify-center gap-[30px]">
+							<div className="mx-auto py-4">
+								<Image src={require('../../resources/apple.svg')} width="64px" height="72px" className="h-6" alt="" />
+							</div>
+
+							<div className="mx-auto py-4">
+								<Image src={require('../../resources/kroger.svg')} width="64px" height="80px" className="h-6" alt="" />
+							</div>
+
+							<div id="splash-logo" className="mx-auto py-4">
+								<Image src={require('../../resources/splash.png')} width="110px" height="30px" className="h-6" alt="" />
+							</div>
+
+							{/* <div className="mx-auto py-4">
+                      <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
+                  </div>
+                  
+                  <div className="mx-auto py-4">
+                      <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
+                  </div>
+                  
+                  <div className="mx-auto py-4">
+                      <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
+                  </div> */}
+						</div>
+					</div>
+				</div>
 			</section>
 		</>
 	)

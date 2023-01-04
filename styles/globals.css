@@ -8839,3 +8839,9 @@ html[dir=rtl] .tns-visually-hidden {
     left: -5rem !important;
   }
 }
+
+@media (min-width: 768px) {
+  #splash-logo > span {
+    margin-top: 22px !important;
+  }
+}
