@@ -10,6 +10,8 @@ import 'react-modern-drawer/dist/index.css'
 // TODO:
 // Implement routing to pages and contact modal
 // Replace blues with logo colors
+// Fix nested nav in drawer
+// Potentially fix scroll and make hamburger have higher z index
 
 const Header = () => {
 	const [isOpen, setIsOpen] = React.useState<boolean>(false)
@@ -20,8 +22,8 @@ const Header = () => {
 
 	return (
 		<header>
-			<nav className="relative container mx-auto p-6">
-				<div className="flex items-center justify-between">
+			<nav id="topnav" className="mx-auto defaultscroll is-sticky nav-sticky">
+				<div className="container flex items-center justify-between">
 					<div className="cursor-pointer pt-2 max-w-xs mx-auto md:mx-0">
 						<Link href="/">
 							<Image src={require('../../resources/sfs-logo.svg')} alt="The Sparks Full-Stack Logo" />
@@ -69,6 +71,7 @@ const Header = () => {
 								<a className={`${styles['sfs-icon']} mr-auto text-3xl font-bold leading-none`} href="#">
 									<Image src={require('../../resources/sfs-icon.svg')} alt="The Sparks Full-Stack Logo" />
 								</a>
+								{/* TODO: Convert to SVG file */}
 								<button onClick={handleToggle} className="navbar-close">
 									<svg
 										className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
