@@ -3531,12 +3531,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-[dir="ltr"] #topnav .menu-extras{
-  float: right;
-}
-[dir="rtl"] #topnav .menu-extras{
-  float: left;
-}
 #topnav.scroll{
   border-style: none;
   --tw-bg-opacity: 1;
@@ -4060,14 +4054,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 #topnav .navigation-menu > li .submenu li a:hover, #topnav .navigation-menu > li.has-submenu.open > a{
     --tw-text-opacity: 1;
     color: rgb(79 70 229 / var(--tw-text-opacity));
-  }
-  #topnav .menu-extras .menu-item{
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
-  }
-  .dark #topnav .menu-extras .menu-item{
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity));
   }
   [dir="ltr"] #topnav .navbar-header{
     float: left;

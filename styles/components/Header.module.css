@@ -1,0 +1,22 @@
+.nav-menu-item {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    min-height: 62px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.action-buttons {
+  width: 145px;
+  border: solid;
+}
+
+.sfs-icon {
+  max-width: 55px;
+}
