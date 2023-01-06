@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<CustomHead title="Sparks Full-Stack" />
+			<CustomHead title="Sparks Full-Stack: World-class software solutions." />
 			<SFSHero />
 			<Services />
 		</>
