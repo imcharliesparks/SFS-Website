@@ -3005,19 +3005,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   line-height: 1.5;
 }
 
-// TODO: Update these with our SFS colors
-::-moz-selection{
-  background-color: rgb(79 70 229 / 0.9);
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-::selection{
-  background-color: rgb(79 70 229 / 0.9);
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 /********************/
 /*     Buttons      */
 /*==================*/
