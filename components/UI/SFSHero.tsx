@@ -14,7 +14,7 @@ const SFSHero = () => {
 						<div className="md:col-span-7 mb-10 md:mb-0">
 							<div className="md:mr-6">
 								<h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">
-									<span className="text-yellow-500">Spark</span> your business growth with world class software solutions.
+									<span className="text-yellow-500">Spark</span> your business growth with world-class software solutions.
 								</h4>
 								<p className="text-slate-400 text-lg max-w-xl">
 									We develop industry leading software that converts and performs.
@@ -57,18 +57,6 @@ const SFSHero = () => {
 						<div id="splash-logo" className="mx-auto py-4">
 							<Image src={require('../../resources/splash.png')} width="110px" height="30px" className="h-6" alt="" />
 						</div>
-
-						{/* <div className="mx-auto py-4">
-                    <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
-                </div>
-                
-                <div className="mx-auto py-4">
-                    <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
-                </div>
-                
-                <div className="mx-auto py-4">
-                    <Image src={require('../../resources/apple.svg')} width='64px' height='72px' className="h-6" alt="" />
-                </div> */}
 					</div>
 				</div>
 			</section>

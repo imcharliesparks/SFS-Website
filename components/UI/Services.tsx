@@ -6,7 +6,7 @@ import { ic_code } from 'react-icons-kit/md/ic_code'
 
 const Services = () => {
 	return (
-		<section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="features">
+		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800" id="features">
 			<div className="container lg mx-auto">
 				<div className="grid grid-cols-1 pb-8 text-center">
 					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Services we Offer</h3>
