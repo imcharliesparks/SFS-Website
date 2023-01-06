@@ -8840,8 +8840,9 @@ html[dir=rtl] .tns-visually-hidden {
   }
 }
 
-@media (min-width: 768px) {
-  #splash-logo > span {
-    margin-top: 22px !important;
-  }
+#apple-logo > span {
+  margin-top: 10px !important;
+}
+#splash-logo > span {
+  margin-top: 30px !important;
 }

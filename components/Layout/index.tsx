@@ -9,7 +9,7 @@ type Props = {
 const Layout = ({ children }: Props) => (
 	<div>
 		<Header />
-		<main className="container mx-auto">{children}</main>
+		<main>{children}</main>
 		<Footer />
 	</div>
 )
