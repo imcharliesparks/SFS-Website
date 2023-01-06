@@ -45,7 +45,7 @@ const SFSHero = () => {
 					<h4 className="text-center text-slate-400 text-1l font-semibold translate-y-[16px]">
 						Our engineers have delivered software for:
 					</h4>
-					<div className="grid grid-cols-3 justify-center">
+					<div className="grid grid-cols-3 justify-center translate-x-[-15px]">
 						<div id="apple-logo" className="mx-auto py-4">
 							<Image src={require('../../resources/apple.svg')} width="54px" height="62px" className="h-6" alt="" />
 						</div>
