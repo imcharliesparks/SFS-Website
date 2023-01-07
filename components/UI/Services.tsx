@@ -3,10 +3,15 @@ import { Icon } from 'react-icons-kit'
 import { ic_computer } from 'react-icons-kit/md/ic_computer'
 import { ic_phone_iphone } from 'react-icons-kit/md/ic_phone_iphone'
 import { ic_code } from 'react-icons-kit/md/ic_code'
-// import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
 import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward'
+import { bitcoin } from 'react-icons-kit/fa/bitcoin'
+import { ic_design_services } from 'react-icons-kit/md/ic_design_services'
+import { ic_fact_check } from 'react-icons-kit/md/ic_fact_check'
 
-// TODO: Hover animation
+// TODO: Hover animation on "Read More"
+// TODO: Fade in animation like here: https://shreethemes.in/techwind/layouts/index-saas.html
+// TODO: Link to services or flip card
+// TODO: Do we want to add more services here with more specific details? https://shreethemes.in/techwind/layouts/index-seo.html
 const Services = () => {
 	return (
 		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800" id="features">
@@ -31,7 +36,7 @@ const Services = () => {
 
 							<div className="mt-5">
 								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600 ">
-									Read More <Icon size={16} icon={ic_arrow_forward} />
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>
@@ -44,7 +49,7 @@ const Services = () => {
 
 						<div className="content mt-7">
 							<a href="page-services.html" className="title h5 text-lg font-medium hover:text-blue-600">
-								Native Applications
+								Mobile & Native Applications
 							</a>
 							<p className="text-slate-400 mt-3">
 								High-performing native applications that run on iOS, Android, Windows, and macOS.
@@ -52,7 +57,7 @@ const Services = () => {
 
 							<div className="mt-5">
 								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
-									Read More <Icon size={16} icon={ic_arrow_forward} />
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>
@@ -60,12 +65,72 @@ const Services = () => {
 
 					<div className="group p-6 md:px-4 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
 						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+							<Icon size={32} icon={bitcoin} />
+						</div>
+
+						<div className="content mt-7">
+							<a href="page-services.html" className="title h5 text-lg font-medium hover:text-blue-600">
+								Web3 Development
+							</a>
+							<p className="text-slate-400 mt-3">
+								Custom smart contracts ranging from coins to NFT projects and everything in between.
+							</p>
+
+							<div className="mt-5">
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
 							<Icon size={32} icon={ic_code} />
 						</div>
 
 						<div className="content mt-7">
 							<a href="page-services.html" className="title h5 text-lg font-medium hover:text-blue-600">
-								Design, Performance, and More
+								Server Applications
+							</a>
+							<p className="text-slate-400 mt-3">
+								From backend app, to microservices, to serverless functions, we&apos;ve got you covered.
+							</p>
+
+							<div className="mt-5">
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+							<Icon size={32} icon={ic_design_services} />
+						</div>
+
+						<div className="content mt-7">
+							<a href="page-services.html" className="title h5 text-lg font-medium hover:text-blue-600">
+								Design
+							</a>
+							<p className="text-slate-400 mt-3">
+								High quality design for your project, from logos to full branding packages.
+							</p>
+
+							<div className="mt-5">
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+							<Icon size={32} icon={ic_fact_check} />
+						</div>
+
+						<div className="content mt-7">
+							<a href="page-services.html" className="title h5 text-lg font-medium hover:text-blue-600">
+								SEO Optimization & Performance
 							</a>
 							<p className="text-slate-400 mt-3">
 								Design, SEO, site performance, updates to existing codebases, and a whole lot more.
@@ -73,7 +138,7 @@ const Services = () => {
 
 							<div className="mt-5">
 								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
-									Read More <Icon size={16} icon={ic_arrow_forward} />
+									Learn More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>
