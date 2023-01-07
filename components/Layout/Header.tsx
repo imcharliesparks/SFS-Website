@@ -12,6 +12,8 @@ import 'react-modern-drawer/dist/index.css'
 // Replace blues with logo colors
 // Fix nested nav in drawer
 // Potentially fix scroll and make hamburger have higher z index
+// Add handling for pop-in/loading animation
+// Add sharp for image processing
 
 const Header = () => {
 	const [isOpen, setIsOpen] = React.useState<boolean>(false)
@@ -22,11 +24,11 @@ const Header = () => {
 
 	return (
 		<header>
-			<nav id="topnav" className="mx-auto defaultscroll is-sticky nav-sticky">
+			<nav id="topnav" className="mx-auto defaultscroll is-sticky nav-sticky animate-gradualLoad">
 				<div className="container flex items-center justify-between">
 					<div className="cursor-pointer pt-2 max-w-xs mx-auto md:mx-0">
 						<Link href="/">
-							<Image src={require('../../resources/sfs-logo.svg')} alt="The Sparks Full-Stack Logo" />
+							<Image priority={true} src={require('../../resources/sfs-logo.svg')} alt="The Sparks Full-Stack Logo" />
 						</Link>
 					</div>
 					<div className="flex-row visible lg:flex hidden">

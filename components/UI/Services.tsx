@@ -3,7 +3,10 @@ import { Icon } from 'react-icons-kit'
 import { ic_computer } from 'react-icons-kit/md/ic_computer'
 import { ic_phone_iphone } from 'react-icons-kit/md/ic_phone_iphone'
 import { ic_code } from 'react-icons-kit/md/ic_code'
+// import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
+import { ic_arrow_forward } from 'react-icons-kit/md/ic_arrow_forward'
 
+// TODO: Hover animation
 const Services = () => {
 	return (
 		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800" id="features">
@@ -27,11 +30,8 @@ const Services = () => {
 							</p>
 
 							<div className="mt-5">
-								<a
-									href=""
-									className="btn btn-link text-blue-600 hover:text-blue-600 after:bg-indigo-600 duration-500 ease-in-out"
-								>
-									Read More
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600 ">
+									Read More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>
@@ -51,11 +51,8 @@ const Services = () => {
 							</p>
 
 							<div className="mt-5">
-								<a
-									href=""
-									className="btn btn-link text-blue-600 hover:text-blue-600 after:bg-indigo-600 duration-500 ease-in-out"
-								>
-									Read More <i className="uil uil-arrow-right"></i>
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
+									Read More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>
@@ -75,11 +72,8 @@ const Services = () => {
 							</p>
 
 							<div className="mt-5">
-								<a
-									href=""
-									className="btn btn-link text-blue-600 hover:text-blue-600 after:bg-indigo-600 duration-500 ease-in-out"
-								>
-									Read More <i className="uil uil-arrow-right"></i>
+								<a href="" className="btn btn-link text-blue-600 hover:text-blue-600">
+									Read More <Icon size={16} icon={ic_arrow_forward} />
 								</a>
 							</div>
 						</div>

@@ -28,6 +28,55 @@ module.exports = {
 
 			},
 			extend: {
+					keyframes: {
+							slideLeft: {
+									'0%': {
+											transform: 'translateX(-100%)',
+											opacity: '0'
+										},
+									'100%': {
+											transform: 'translateX(0%)',
+											opacity: '1'
+									}
+									
+							},
+							slideRight: {
+									'0%': {
+											transform: 'translateX(100%)',
+											opacity: '0'
+										},
+									'100%': {
+											transform: 'translateX(0%)',
+											opacity: '1'
+									}
+									
+							},
+							slideUp: {
+									'0%': {
+											transform: 'translateY(50%)',
+											opacity: '0'
+										},
+									'100%': {
+											transform: 'translateY(0%)',
+											opacity: '1'
+									}
+									
+							},
+							gradualLoad: {
+									'0%': {
+											opacity: '0'
+										},
+									'100%': {
+											opacity: '1'
+									}
+							}
+					},
+					animation: {
+						slideLeft: 'slideLeft .7s ease',
+						slideRight: 'slideRight .7s ease',
+						slideUp: 'slideUp .7s ease',
+						gradualLoad: 'gradualLoad .7s ease-in'
+					},
 					colors: {
 							'dark': '#3c4858',
 							'black': '#161c2d',

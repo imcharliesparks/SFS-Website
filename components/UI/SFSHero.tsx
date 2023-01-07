@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 // TODO
 // Experiment with image placement (background image instead?)
+// Replace priority on images with Sharp package
 
 const SFSHero = () => {
 	return (
@@ -11,7 +12,7 @@ const SFSHero = () => {
 			<section className="relative table w-full md:py-36 lg:py-44 pt-[5rem] xs:pb-10">
 				<div className="mx-auto container">
 					<div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] text-center md:text-left">
-						<div className="md:col-span-7 mb-10 md:mb-0">
+						<div className="md:col-span-7 mb-10 md:mb-0 md:animate-slideLeft xs:animate-slideUp">
 							<div className="md:mr-6">
 								<h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">
 									<span className="text-yellow-500">Spark</span> your business growth with world-class software solutions.
@@ -34,8 +35,12 @@ const SFSHero = () => {
 							</div>
 						</div>
 
-						<div className="md:col-span-5">
-							<Image src={require('../../resources/hero-art.svg')} alt="Hero image with a rocket and a computer screen" />
+						<div className="md:col-span-5 md:animate-slideRight xs:animate-slideUp">
+							<Image
+								priority={true}
+								src={require('../../resources/hero-art.svg')}
+								alt="Hero image with a rocket and a computer screen"
+							/>
 						</div>
 					</div>
 				</div>
@@ -45,17 +50,38 @@ const SFSHero = () => {
 					<h4 className="text-center text-slate-400 text-1l font-semibold translate-y-[16px]">
 						Our engineers have delivered software for:
 					</h4>
-					<div className="grid grid-cols-3 justify-center translate-x-[-15px]">
+					<div className="grid grid-cols-3 justify-center translate-x-[-15px] animate-gradualLoad">
 						<div id="apple-logo" className="mx-auto py-4">
-							<Image src={require('../../resources/apple.svg')} width="54px" height="62px" className="h-6" alt="" />
+							<Image
+								priority={true}
+								src={require('../../resources/apple.svg')}
+								width="54px"
+								height="62px"
+								className="h-6"
+								alt=""
+							/>
 						</div>
 
 						<div id="kroger-logo" className="mx-auto py-4">
-							<Image src={require('../../resources/kroger.svg')} width="74px" height="90px" className="h-6" alt="" />
+							<Image
+								priority={true}
+								src={require('../../resources/kroger.svg')}
+								width="74px"
+								height="90px"
+								className="h-6"
+								alt=""
+							/>
 						</div>
 
 						<div id="splash-logo" className="mx-auto py-4">
-							<Image src={require('../../resources/splash.png')} width="110px" height="30px" className="h-6" alt="" />
+							<Image
+								priority={true}
+								src={require('../../resources/splash.png')}
+								width="110px"
+								height="30px"
+								className="h-6"
+								alt=""
+							/>
 						</div>
 					</div>
 				</div>
