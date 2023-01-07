@@ -9,7 +9,7 @@ import Link from 'next/link'
 const SFSHero = () => {
 	return (
 		<>
-			<section className="relative table w-full md:py-36 lg:py-44 pt-[5rem] xs:pb-10">
+			<section className="relative table w-full md:py-36 pt-[5rem] xs:pb-10">
 				<div className="mx-auto container">
 					<div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] text-center md:text-left">
 						<div className="md:col-span-7 mb-10 md:mb-0 md:animate-slideLeft xs:animate-slideUp">
