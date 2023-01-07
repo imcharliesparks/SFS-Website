@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 // TODO
 // Experiment with image placement (background image instead?)
-// Replace priority on images with Sharp package
+// Replace priority on images with Sharp package https://stackoverflow.com/questions/66637391/next-images-components-are-too-slow-to-appear
 
 const SFSHero = () => {
 	return (

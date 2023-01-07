@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"@next-auth/mongodb-adapter": "^1.0.3",
+		"@next/font": "^13.1.1",
 		"@testing-library/react-hooks": "^8.0.1",
 		"bcrypt": "^5.0.1",
 		"hamburger-react": "^2.5.0",

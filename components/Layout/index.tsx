@@ -7,11 +7,11 @@ type Props = {
 }
 
 const Layout = ({ children }: Props) => (
-	<div>
+	<>
 		<Header />
 		<main>{children}</main>
 		<Footer />
-	</div>
+	</>
 )
 
 export default Layout
