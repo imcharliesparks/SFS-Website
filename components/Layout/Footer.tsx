@@ -32,7 +32,7 @@ const Footer = () => {
 											href="https://www.linkedin.com/company/89719355/admin/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
+											className="btn btn-icon btn-sm border border-blue-600 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
 										>
 											<Icon icon={linkedin2} className="align-middle" title="LinkedIn" />
 										</a>
@@ -42,7 +42,7 @@ const Footer = () => {
 											href="https://www.linkedin.com/company/89719355/admin/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
+											className="btn btn-icon btn-sm border border-blue-600 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
 										>
 											<Icon icon={instagram} className="align-middle" title="Instagram" />
 										</a>
@@ -52,7 +52,7 @@ const Footer = () => {
 											href="https://www.linkedin.com/company/89719355/admin/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
+											className="btn btn-icon btn-sm border border-blue-600 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
 										>
 											<Icon icon={facebook2} className="align-middle" title="Facebook" />
 										</a>
@@ -60,7 +60,7 @@ const Footer = () => {
 									<li className="inline mr-2">
 										<a
 											href="mailto:sparksfullstack@gmail.com"
-											className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
+											className="btn btn-icon btn-sm border border-blue-600 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
 										>
 											<Icon icon={ic_email} className="align-middle" title="Email" />
 										</a>
