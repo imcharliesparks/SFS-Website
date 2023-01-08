@@ -14,9 +14,13 @@ const SFSHero = () => {
 					<div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] text-center md:text-left">
 						<div className="md:col-span-7 mb-10 md:mb-0 md:animate-slideLeft xs:animate-slideUp">
 							<div className="md:mr-6">
-								<h4 className="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">
-									<span className="text-yellow-500">Spark</span> your business growth with world-class software solutions.
+								<h4 className="font-semibold lg:leading-normal leading-normal xs:text-4xl md:text-5xl mb-5 text-black dark:text-white tracking-tighter whitespace-nowrap">
+									<span className="text-yellow-500">Spark</span> your growth
+									<br />
 								</h4>
+								<h5 className="text-slate-600 xs:text-2xl md:text-3xl tracking-normal xs:-translate-y-[18px] md:-translate-y-[25px]">
+									with world-class software solutions.
+								</h5>
 								<p className="text-slate-400 text-lg max-w-xl">
 									We develop industry leading software that converts and performs.
 								</p>

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'neometric-regular';
+  src: url('/fonts/Neometric-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'neometric-light';
+  src: url('/fonts/Neometric-Light.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'neometric-medium';
+  src: url('/fonts/Neometric-Medium.ttf') format('ttf');
+}
+
 @charset "UTF-8";
 /* Template Name: Techwind - Multipurpose Tailwind CSS Landing Page Template
    Author: Shreethemes
@@ -56,6 +69,7 @@ html {
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
+  font-family: 'neometric-regular';
 }
 /*
 1. Add the correct height in Firefox.
