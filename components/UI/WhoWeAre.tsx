@@ -16,11 +16,11 @@ const WhoWeAre = () => {
 				<div className="grid grid-cols-1 pb-8 text-center">
 					<h6 className="text-indigo-600 text-base mb-2">Who We Are</h6>
 					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-						21+ Years of Combined Experinece
+						21+ Years of Combined Experience
 					</h3>
 
 					<p className="text-slate-400 max-w-xl mx-auto">
-						We have extensive experience deliverying world-class applications that perform and convert. Our work has made and
+						We have extensive experience delivering world-class applications that perform and convert. Our work has made and
 						saved millions for the companies we&apos;ve worked with.
 					</p>
 				</div>
