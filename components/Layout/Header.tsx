@@ -14,6 +14,8 @@ import 'react-modern-drawer/dist/index.css'
 // Potentially fix scroll and make hamburger have higher z index
 // Add handling for pop-in/loading animation
 // Add sharp for image processing
+// Rethink this order of menu items
+// Consider implementing a better scrolling methodology
 
 const Header = () => {
 	const [isOpen, setIsOpen] = React.useState<boolean>(false)
@@ -32,29 +34,31 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="flex-row visible lg:flex hidden">
-						<Link href="/auth/sign-in">
-							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
-								About
-							</a>
-						</Link>
-						<Link href="/auth/sign-in">
+						<Link href="#services">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
 								Services
 							</a>
 						</Link>
-						<Link href="/auth/sign-in">
+						<Link href="#whoWeAre">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
-								Who We Are
+								About
+							</a>
+						</Link>
+						<Link href="#contact">
+							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
+								Contact
 							</a>
 						</Link>
 					</div>
 					<div className="flex-row lg:flex hidden">
-						<span
-							className={`${styles['action-buttons']} cursor-pointer px-6 py-2.5 rounded-full baseline hover:bg-blue-600 hover:text-white transition-colors text-center mr-2`}
-						>
-							Request Info
-						</span>
-						<Link href="/auth/sign-in">
+						<Link href="#contact">
+							<a
+								className={`${styles['action-buttons']} cursor-pointer px-6 py-2.5 rounded-full baseline hover:bg-blue-600 hover:text-white transition-colors text-center mr-2`}
+							>
+								Request Info
+							</a>
+						</Link>
+						<Link href="/client-application">
 							<a
 								className={`${styles['action-buttons']} cursor-pointer bg-blue-600 px-6 py-2.5 rounded-full text-white baseline hover:bg-blue-300 transition-colors text-center`}
 							>

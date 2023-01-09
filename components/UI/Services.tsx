@@ -14,10 +14,12 @@ import { ic_fact_check } from 'react-icons-kit/md/ic_fact_check'
 // TODO: Do we want to add more services here with more specific details? https://shreethemes.in/techwind/layouts/index-seo.html
 const Services = () => {
 	return (
-		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800" id="features">
+		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800">
 			<div className="container lg mx-auto">
 				<div className="grid grid-cols-1 pb-8 text-center">
-					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Services we Offer</h3>
+					<h3 id="services" className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+						Services we Offer
+					</h3>
 					<p className="text-slate-400 max-w-xl mx-auto">If you can dream it, we can build it.</p>
 				</div>
 				<div className="grid md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">

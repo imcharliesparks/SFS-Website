@@ -11,7 +11,7 @@ import { ic_person } from 'react-icons-kit/md/ic_person'
 // TODO: Add email support
 const WhoWeAre = () => {
 	return (
-		<section className="relative md:py-24 py-16">
+		<section id="whoWeAre" className="relative md:py-24 py-16">
 			<div className="container">
 				<div className="grid grid-cols-1 pb-8 text-center">
 					<h6 className="text-indigo-600 text-base mb-2">Who We Are</h6>
@@ -41,7 +41,7 @@ const WhoWeAre = () => {
 										</Link>
 									</li>
 									<li className="inline mx-1">
-										<Link href="">
+										<Link href="mailto:charlie@sparksfullstack.io">
 											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} icon={ic_email} />
 											</a>
@@ -61,7 +61,7 @@ const WhoWeAre = () => {
 								<a href="" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">
 									Charlie Sparks
 								</a>
-								<p className="text-slate-400">CEO & Co-Founder</p>
+								<p className="text-slate-400">CEO & Software Engineer</p>
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@ const WhoWeAre = () => {
 										</Link>
 									</li>
 									<li className="inline mx-1">
-										<Link href="">
+										<Link href="mailto:stephen@sparksfullstack.io">
 											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} icon={ic_email} />
 											</a>
@@ -100,7 +100,7 @@ const WhoWeAre = () => {
 								<a href="" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">
 									Stephen Fischer
 								</a>
-								<p className="text-slate-400">CTO and Co-Founder</p>
+								<p className="text-slate-400">CTO & Software Engineer</p>
 							</div>
 						</div>
 					</div>

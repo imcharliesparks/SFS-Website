@@ -6,6 +6,7 @@ import Services from '../components/UI/Services'
 import WhoWeAre from '../components/UI/WhoWeAre'
 import WhyUs from '../components/UI/WhyUs'
 import Contact from '../components/UI/Contact'
+import BackToTop from '../components/general/BackToTop'
 
 const Home: NextPage = () => {
 	return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
 			<WhoWeAre />
 			<WhyUs />
 			<Contact />
+			<BackToTop />
 		</>
 	)
 }

@@ -8,7 +8,7 @@ import { ic_check_circle_outline } from 'react-icons-kit/md/ic_check_circle_outl
 // TODO: Style the H4s here
 const WhyUs = () => {
 	return (
-		<section className="md:py-24 py-16 overflow-x-hidden xs:text-center md:text-left">
+		<section id="whyUs" className="md:pb-24 py-16 overflow-x-hidden xs:text-center md:text-left">
 			<div className="container">
 				<div className="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
 					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Why Work with Us?</h3>
