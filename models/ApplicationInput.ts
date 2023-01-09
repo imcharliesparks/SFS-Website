@@ -1,7 +1,7 @@
 import { Schema, model, models } from 'mongoose'
 import { ServicesOffered } from '../shared/types'
 
-export interface IContactInputForm {
+export interface IApplicationInputForm {
 	_id?: string
 	firstName: string
 	lastName: string
@@ -13,7 +13,7 @@ export interface IContactInputForm {
 	createdAt?: Date
 }
 
-const contactInputFormSchema = new Schema<IContactInputForm>({
+const ApplicationInputFormSchema = new Schema<IApplicationInputForm>({
 	firstName: {
 		type: String,
 		required: true
@@ -48,4 +48,5 @@ const contactInputFormSchema = new Schema<IContactInputForm>({
 	}
 })
 
-export const ContactInputForm = models.ContactInputForm || model('ContactInputForm', contactInputFormSchema)
+export const ApplicationInputForm =
+	models.ApplicationInputForm || model('ApplicationInputForm', ApplicationInputFormSchema)

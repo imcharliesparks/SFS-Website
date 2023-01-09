@@ -1,6 +1,57 @@
-import React from 'react'
+import * as React from 'react'
+import Link from 'next/link'
+import { APIMethods, ContactFormInput } from '../../shared/types'
 
 const Contact = () => {
+	const nameRef = React.useRef<HTMLInputElement>(null)
+	const emailRef = React.useRef<HTMLInputElement>(null)
+	const businessRef = React.useRef<HTMLInputElement>(null)
+	const phoneRef = React.useRef<HTMLInputElement>(null)
+	const messageRef = React.useRef<HTMLTextAreaElement>(null)
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		// TODO: Add toasts
+		e.preventDefault()
+		if (!nameRef.current?.value || !emailRef.current?.value) {
+			alert('Add a toast here instead my guy')
+		}
+
+		try {
+			const contactFormInput: ContactFormInput = {
+				name: nameRef.current!.value!,
+				email: emailRef.current!.value!
+			}
+			if (businessRef.current?.value) {
+				contactFormInput.companyName = businessRef.current.value
+			}
+
+			if (phoneRef.current?.value) {
+				contactFormInput.phone = phoneRef.current.value
+			}
+
+			if (messageRef.current?.value) {
+				contactFormInput.message = messageRef.current.value
+			}
+
+			const response = await fetch(`/api/contact`, {
+				method: APIMethods.POST,
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ contactFormInput })
+			})
+			await response.json()
+			if (response.status === 201) {
+				alert('Success! Toast here, too')
+			} else {
+				throw new Error('Contact input post failed! Add a toast')
+			}
+		} catch (e) {
+			console.error(e)
+			alert(`We couldn't create an entity! Toast here, too`)
+		}
+	}
+
 	return (
 		<section className="bg-gray-50 py-12">
 			<div className="container">
@@ -10,46 +61,57 @@ const Contact = () => {
 						<p className="text-slate-400 -translate-y-[12px]">Apply as a client or request info. We&apos;ll be in touch!</p>
 
 						<div className="flex flex-row w-full items-center justify-center">
-							<button
-								type="submit"
-								className="btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]"
-								value="Apply"
-							>
-								Apply to Work with Us
-							</button>
+							<Link href="/client-application">
+								<a className="btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]">
+									Apply to Work with Us
+								</a>
+							</Link>
 						</div>
 					</div>
 
 					<div className="p-6 ltr:lg:ml-16 rtl:lg:mr-16 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 container">
 						<h3 className="mb-2 text-2xl leading-normal font-semibold text-center">Request More Info</h3>
-						<form action="auth-signup-success.html" className="ltr:text-left rtl:text-right mt-6">
+						<form onSubmit={handleSubmit} className="ltr:text-left rtl:text-right mt-6">
 							<div className="grid grid-cols-1">
 								<div className="mb-4">
 									<label className="font-semibold" htmlFor="InfoName">
 										Your Name:
 									</label>
-									<input id="InfoName" type="text" className="form-input mt-3" placeholder="John Smith" required />
+									<input ref={nameRef} id="InfoName" type="text" className="form-input mt-3" placeholder="John Smith" required />
 								</div>
 
 								<div className="mb-4">
 									<label className="font-semibold" htmlFor="InfoEmail">
 										Email Address:
 									</label>
-									<input id="InfoEmail" type="email" className="form-input mt-3" placeholder="name@example.com" required />
+									<input
+										ref={emailRef}
+										id="InfoEmail"
+										type="email"
+										className="form-input mt-3"
+										placeholder="name@example.com"
+										required
+									/>
 								</div>
 
 								<div className="mb-4">
-									<label className="font-semibold" htmlFor="InfoPassword">
+									<label className="font-semibold" htmlFor="InfoBusiness">
 										Business Name (optional):
 									</label>
-									<input id="InfoPassword" type="password" className="form-input mt-3" placeholder="Sparks Full-Stack" />
+									<input
+										ref={businessRef}
+										id="InfoBusiness"
+										type="text"
+										className="form-input mt-3"
+										placeholder="Sparks Full-Stack"
+									/>
 								</div>
 
 								<div className="mb-4">
 									<label className="font-semibold" htmlFor="InfoPhone">
 										Phone Number (optional):
 									</label>
-									<input id="InfoPhone" type="tel" className="form-input mt-3" placeholder="(111) 111-1111" />
+									<input ref={phoneRef} id="InfoPhone" type="tel" className="form-input mt-3" placeholder="(111) 111-1111" />
 								</div>
 
 								<div className="mb-4">
@@ -57,7 +119,7 @@ const Contact = () => {
 										Message (optional):
 									</label>
 									<textarea
-										// style={{ height: '8rem' }}
+										ref={messageRef}
 										id="InfoMessage"
 										className="form-input mt-3 h-[8rem]"
 										placeholder="Can't wait for you to build my super awesome app!"

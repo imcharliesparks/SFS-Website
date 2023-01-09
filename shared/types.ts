@@ -87,6 +87,14 @@ export enum ServicesOffered {
 }
 
 export type ContactFormInput = {
+	name: string
+	email: string
+	companyName?: string
+	phone?: string
+	message?: string
+}
+
+export type ApplicationFormInput = {
 	firstName: string
 	lastName: string
 	serviceDesired: ServicesOffered

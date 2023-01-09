@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { APIMethods, APIStatuses, ContactFormInput, EntityReponses, GeneralAPIResponses } from '../../shared/types'
 import { connectToMongoDB } from '../../lib/db'
-import { ContactInputForm } from '../../models/ContactInput'
+import { ApplicationInputForm } from '../../models/ApplicationInput'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 	const { method, body } = req
@@ -12,15 +12,15 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
 	try {
 		await connectToMongoDB()
-		const contactInput: ContactFormInput = body.contactFormInput
+		const applicationInput: ContactFormInput = body
 
-		const contactInputForm = new ContactInputForm(contactInput)
+		const applicationInputForm = new ApplicationInputForm(applicationInput)
 
-		return contactInputForm
+		return applicationInputForm
 			? res.status(201).json({
 					status: APIStatuses.SUCCESS,
 					type: EntityReponses.ENTITY_CREATED,
-					data: { entityId: contactInputForm._id.toString() }
+					data: { entityId: applicationInputForm._id.toString() }
 			  })
 			: res.status(400).json({ status: APIStatuses.ERROR, type: EntityReponses.UNABLE_TO_SAVE_ENTITY })
 	} catch (e) {
