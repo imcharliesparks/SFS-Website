@@ -100,7 +100,7 @@ const WhoWeAre = () => {
 								<a href="" className="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">
 									Stephen Fischer
 								</a>
-								<p className="text-slate-400">Co-Founder and CTO</p>
+								<p className="text-slate-400">CTO and Co-Founder</p>
 							</div>
 						</div>
 					</div>

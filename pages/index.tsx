@@ -5,6 +5,7 @@ import SFSHero from '../components/UI/SFSHero'
 import Services from '../components/UI/Services'
 import WhoWeAre from '../components/UI/WhoWeAre'
 import WhyUs from '../components/UI/WhyUs'
+import Contact from '../components/UI/Contact'
 
 const Home: NextPage = () => {
 	return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
 			<Services />
 			<WhoWeAre />
 			<WhyUs />
+			<Contact />
 		</>
 	)
 }
