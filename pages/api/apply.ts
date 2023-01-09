@@ -12,11 +12,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
 	try {
 		await connectToMongoDB()
+
 		const applicationInput: ContactFormInput = body
-
 		const applicationInputForm = new ApplicationInputForm(applicationInput)
+		const newApplicationInput = await applicationInputForm.save()
 
-		return applicationInputForm
+		return applicationInputForm === newApplicationInput
 			? res.status(201).json({
 					status: APIStatuses.SUCCESS,
 					type: EntityReponses.ENTITY_CREATED,
