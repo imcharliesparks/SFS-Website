@@ -29,7 +29,7 @@ const Footer = () => {
 								<ul className="list-none text-center mt-9">
 									<li className="inline mr-2">
 										<a
-											href="https://www.linkedin.com/company/89719355/admin/"
+											href="https://www.linkedin.com/company/sparksfullstack"
 											target="_blank"
 											rel="noopener noreferrer"
 											className="btn btn-icon btn-sm border border-blue-600 rounded-md hover:border-blue-600 dark:hover:border-blue-600 hover:bg-blue-600 dark:hover:bg-blue-600"
