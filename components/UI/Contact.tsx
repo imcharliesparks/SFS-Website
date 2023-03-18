@@ -1,8 +1,10 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { APIMethods, ContactFormInput } from '../../shared/types'
+import LoadingSpinner from '../general/LoadingSpinner'
 
 const Contact = () => {
+	const [showLoadingSpinner, setShowLoadingSpinner] = React.useState<boolean>(false)
 	const nameRef = React.useRef<HTMLInputElement>(null)
 	const emailRef = React.useRef<HTMLInputElement>(null)
 	const businessRef = React.useRef<HTMLInputElement>(null)
@@ -10,13 +12,14 @@ const Contact = () => {
 	const messageRef = React.useRef<HTMLTextAreaElement>(null)
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-		// TODO: Add toasts
+		// TODO: Add proper toasts
 		e.preventDefault()
 		if (!nameRef.current?.value || !emailRef.current?.value) {
-			alert('Add a toast here instead my guy')
+			alert('Please fill out all required fields')
 		}
 
 		try {
+			setShowLoadingSpinner(true)
 			const contactFormInput: ContactFormInput = {
 				name: nameRef.current!.value!,
 				email: emailRef.current!.value!
@@ -42,13 +45,20 @@ const Contact = () => {
 			})
 			await response.json()
 			if (response.status === 201) {
-				alert('Success! Toast here, too')
+				alert('Success! We\'ll be in touch soon!')
+				nameRef.current!.value = ''
+				emailRef.current!.value = ''
+				businessRef.current!.value = ''
+				phoneRef.current!.value = ''
+				messageRef.current!.value = ''
 			} else {
-				throw new Error('Contact input post failed! Add a toast')
+				throw new Error('There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io')
 			}
 		} catch (e) {
 			console.error(e)
-			alert(`We couldn't create an entity! Toast here, too`)
+			alert(`There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io`)
+		} finally {
+			setShowLoadingSpinner(false)
 		}
 	}
 
@@ -132,11 +142,18 @@ const Contact = () => {
 								</div>
 
 								<div className="mb-4 flex flex-row justify-center mt-2">
-									<input
+									<button
 										type="submit"
-										className="cursor-pointer btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]"
-										value="Request More Info"
-									/>
+										className={`cursor-pointer ${!showLoadingSpinner && 'p-3'} btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]`}
+									>
+										{ showLoadingSpinner 
+											? (
+												<div className="flex justify-center">
+													<LoadingSpinner/>
+													</div>
+												) 
+											: 'Request More Info' }
+									</button>
 								</div>
 							</div>
 						</form>

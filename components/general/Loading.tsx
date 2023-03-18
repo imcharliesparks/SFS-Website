@@ -6,7 +6,7 @@ const Loading = () => {
 	return (
 		<div className={styles.container}>
 			<span className={`${styles.text} mb-3`}>Loading...</span>
-			<LoadingSpinner />
+			<LoadingSpinner classes="mr-2" />
 		</div>
 	)
 }

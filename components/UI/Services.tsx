@@ -15,10 +15,10 @@ import { ic_person } from 'react-icons-kit/md/ic_person'
 // TODO: Reinstate learn more once the above is
 const Services = () => {
 	return (
-		<section className="relative pb-24 pt-12 bg-gray-50 dark:bg-slate-800">
+		<section className="relative pb-16 md:pb-24 py-8 md:pt-12 bg-gray-50 dark:bg-slate-800">
 			<div className="container lg mx-auto">
-				<div className="grid grid-cols-1 pb-8 text-center">
-					<h3 id="services" className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+				<div className="grid grid-cols-1 md:pb-8 text-center">
+					<h3 id="services" className="md:mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
 						Services we Offer
 					</h3>
 					<p className="text-slate-400 max-w-xl mx-auto">If you can dream it, we can build it.</p>
@@ -86,7 +86,7 @@ const Services = () => {
 							</div> */}
 						</div>
 					</div>
-					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+					<div className="group p-6 md:px-4 md:mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
 						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
 							<Icon size={32} icon={ic_code} />
 						</div>
@@ -106,7 +106,7 @@ const Services = () => {
 							</div> */}
 						</div>
 					</div>
-					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+					<div className="group p-6 md:px-4 md:mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
 						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
 							<Icon size={32} icon={bitcoin} />
 						</div>
@@ -126,7 +126,7 @@ const Services = () => {
 							</div> */}
 						</div>
 					</div>
-					<div className="group p-6 md:px-4 mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
+					<div className="group p-6 md:px-4 md:mt-8 rounded-lg shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 bg-white dark:bg-slate-900 text-center transition-all duration-500 ease-in-out">
 						<div className="w-16 h-16 bg-indigo-600/5 text-blue-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
 							<Icon size={32} icon={ic_fact_check} />
 						</div>
