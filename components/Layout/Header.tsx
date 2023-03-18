@@ -24,6 +24,7 @@ const Header = () => {
 		setIsOpen((prevIsOpen) => !prevIsOpen)
 	}
 
+	// TODO: Also update once client application form flow is done
 	return (
 		<header>
 			<nav id="topnav" className="mx-auto defaultscroll is-sticky nav-sticky animate-gradualLoad">
@@ -51,18 +52,25 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="flex-row lg:flex hidden">
-						<Link href="#contact">
+						{/* <Link href="#contact">
 							<a
 								className={`${styles['action-buttons']} cursor-pointer px-6 py-2.5 rounded-full baseline hover:bg-blue-600 hover:text-white transition-colors text-center mr-2`}
 							>
 								Request Info
 							</a>
 						</Link>
-						<Link href="/client-application">
+						<Link href="/apply">
 							<a
 								className={`${styles['action-buttons']} cursor-pointer bg-blue-600 px-6 py-2.5 rounded-full text-white baseline hover:bg-blue-300 transition-colors text-center`}
 							>
 								Apply Now
+							</a>
+						</Link> */}
+						<Link href="#contact">
+							<a
+								className={`${styles['action-buttons']} cursor-pointer bg-blue-600 px-6 py-2.5 rounded-full text-white baseline hover:bg-blue-300 transition-colors text-center`}
+							>
+								Request Info
 							</a>
 						</Link>
 					</div>
@@ -78,7 +86,7 @@ const Header = () => {
 									<Image src={require('../../resources/sfs-icon.svg')} alt="The Sparks Full-Stack Logo" />
 								</a>
 								{/* TODO: Convert to SVG file */}
-								<button onClick={handleToggle} className="navbar-close">
+								{/* <button onClick={handleToggle} className="navbar-close">
 									<svg
 										className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
 										xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +96,7 @@ const Header = () => {
 									>
 										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
 									</svg>
-								</button>
+								</button> */}
 							</div>
 							<div>
 								<Link href="#">
@@ -123,7 +131,8 @@ const Header = () => {
 							</div>
 							<div className="mt-auto">
 								<div className="pt-6">
-									<Link href="#">
+									{/* TODO: Reinstate once client app flow is done */}
+									{/* <Link href="#">
 										<a className="cursor-pointer block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-200 rounded-xl transition-all ease-in duration-200">
 											Request Info
 										</a>
@@ -131,6 +140,11 @@ const Header = () => {
 									<Link href="#">
 										<a className="cursor-pointer block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-400 rounded-xl transition-all ease-in duration-200">
 											Apply Now
+										</a>
+									</Link> */}
+									<Link href="#contact">
+										<a onClick={() => setIsOpen(false)} className="cursor-pointer block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-400 rounded-xl transition-all ease-in duration-200">
+											Request Info
 										</a>
 									</Link>
 								</div>

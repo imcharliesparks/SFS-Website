@@ -9,12 +9,13 @@ import { SessionProvider } from 'next-auth/react'
 // const nunito = Nunito()
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+	// @ts-ignore
+	const renderWithLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>)
+
 	return (
 		<ErrorBoundary>
 			<SessionProvider session={session}>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
+				{ renderWithLayout((<Component {...pageProps} />)) }
 			</SessionProvider>
 		</ErrorBoundary>
 	)

@@ -52,21 +52,24 @@ const Contact = () => {
 		}
 	}
 
+	// TODO: Reinstate commented out code once client application form flow is done
 	return (
 		<section id="contact" className="bg-gray-50 py-12">
 			<div className="container">
 				<div className="flex flex-col container">
-					<div className="relative text-center mb-12">
+					{/* <div className="relative text-center mb-12"> */}
+					<div className="relative text-center mb-6">
 						<h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Ready to hear more?</h3>
-						<p className="text-slate-400 -translate-y-[12px]">Apply as a client or request info. We&apos;ll be in touch!</p>
+						{/* <p className="text-slate-400 -translate-y-[12px]">Apply as a client or request info. We&apos;ll be in touch!</p> */}
+						<p className="text-slate-400 -translate-y-[12px]">Enter your info below. We&apos;ll be in touch!</p>
 
-						<div className="flex flex-row w-full items-center justify-center">
-							<Link href="/client-application">
+						{/* <div className="flex flex-row w-full items-center justify-center">
+							<Link href="/apply">
 								<a className="btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]">
 									Apply to Work with Us
 								</a>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="p-6 ltr:lg:ml-16 rtl:lg:mr-16 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 container">

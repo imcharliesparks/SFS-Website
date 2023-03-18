@@ -14,8 +14,7 @@ const WhyUs = () => {
 					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Why Work with Us?</h3>
 
 					<p className="text-slate-400 max-w-xl mx-auto">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ducimus iure quibusdam corrupti quis numquam
-						consectetur, facilis ipsam.
+						With over two decades of combined experiece under our belt, we&lsquo;re experts at software development and seamless project delivery. Get Silicon Valley-grade software at a real world price.
 					</p>
 				</div>
 
@@ -34,22 +33,20 @@ const WhyUs = () => {
 							Great Software that Solves <br /> Real World Problems
 						</h4>
 						<p className="text-slate-400">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem harum iure soluta ex aperiam,
-							ullam nostrum aliquid similique doloremque numquam excepturi rerum, omnis laborum consectetur! Corrupti eveniet
-							inventore consectetur.
+							Empower your business with our world-class solutions. We provide cutting-edge software that boosts efficiency, productivity, and user satisfaction. Whether your challenge is complex or simple, we create custom software that fits your needs and surpasses your expectations.
 						</p>
 						<ul className="list-none text-slate-400 mt-4">
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Cutting-edge software designed to solve real-world problems.
 							</li>
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Efficient, productive, and user-friendly software.
 							</li>
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Tailored to meet unique requirements and exceed expectations.
 							</li>
 						</ul>
 
@@ -78,22 +75,21 @@ const WhyUs = () => {
 					<div className="lg:mr-8 order-2 md:order-1 wow animate-gradualLoad" data-wow-delay=".5s">
 						<h4 className="mb-4 text-2xl leading-normal font-medium">Applications that Convert and Perform</h4>
 						<p className="text-slate-400">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem harum iure soluta ex aperiam,
-							ullam nostrum aliquid similique doloremque numquam excepturi rerum, omnis laborum consectetur! Corrupti eveniet
-							inventore consectetur.
+							Transform your business with cutting-edge custom applications. We design and develop solutions that meet the unique needs of your business and drive real results.
 						</p>
+
 						<ul className="list-none text-slate-400 mt-4">
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Custom applications tailored to meet the needs of your business.
 							</li>
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Streamline processes, improve UX, and increase revenue.
 							</li>
 							<li className="mb-1">
 								<Icon size={22} icon={ic_check_circle_outline} className="text-blue-600 text-xl mr-2" />
-								Lorem ipsum dolor sit amet.
+								Created by experts to set you apart from the competition.
 							</li>
 						</ul>
 

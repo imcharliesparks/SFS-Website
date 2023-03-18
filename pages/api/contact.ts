@@ -3,6 +3,7 @@ import { APIMethods, APIStatuses, ContactFormInput, EntityReponses, GeneralAPIRe
 import { connectToMongoDB } from '../../lib/db'
 import { ContactInputForm } from '../../models/ContactInput'
 
+// TODO: Set up alerting here via email or text once a contact is created
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 	const { method, body } = req
 
