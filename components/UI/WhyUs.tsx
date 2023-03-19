@@ -22,6 +22,7 @@ const WhyUs = () => {
 				<div className="grid md:grid-cols-2 grid-cols-1 items-center mt-16 gap-[30px]">
 					<div className="relative animate-slideLeft" data-wow-delay=".3s">
 						<Image
+							priority={true}
 							src={require('../../resources/classic02.png')}
 							className="rounded-lg shadow-md dark:shadow-gray-800"
 							alt="Screenshot of software in action"
@@ -67,6 +68,7 @@ const WhyUs = () => {
 				<div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
 					<div className="relative order-1 md:order-2 animate-slideRight" data-wow-delay=".5s">
 						<Image
+							priority={true}
 							src={require('../../resources/classic03.png')}
 							className="rounded-lg shadow-md dark:shadow-gray-800"
 							alt="Screenshot of software in action"

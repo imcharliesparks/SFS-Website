@@ -6,7 +6,7 @@ const Apply = () => {
 	return (
 		<section className="md:pb-24 py-16 overflow-x-hidden xs:text-center md:text-left h-[100%] flex content-center">
 			<div className="container flex flex-col justify-center">
-				<Image alt="Our stock image" width={'332px'} height={'309.95px'} src={require('../resources/test-image.svg')} />
+				<Image priority={true} alt="Our stock image" width={'332px'} height={'309.95px'} src={require('../resources/test-image.svg')} />
 				<div className="text-center my-10">
 					<p className="text-3xl">Ready to bring your idea to life?</p>
 				</div>

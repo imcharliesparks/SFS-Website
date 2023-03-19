@@ -83,7 +83,7 @@ const Header = () => {
 						<div className="flex flex-col py-6 px-6 bg-white border-r h-full">
 							<div className="flex items-center mb-8">
 								<a className={`${styles['sfs-icon']} mr-auto text-3xl font-bold leading-none`} href="#">
-									<Image src={require('../../resources/sfs-icon.svg')} alt="The Sparks Full-Stack Logo" />
+									<Image priority={true} src={require('../../resources/sfs-icon.svg')} alt="The Sparks Full-Stack Logo" />
 								</a>
 								{/* TODO: Convert to SVG file */}
 								{/* <button onClick={handleToggle} className="navbar-close">

@@ -29,7 +29,7 @@ const WhoWeAre = () => {
 					<div className="md:col-span-6">
 						<div className="group text-center">
 							<div className="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
-								<Image src={require('../../resources/charlie.jpeg')} height={278} width={278} alt="Charlie Sparks" />
+								<Image priority={true} src={require('../../resources/charlie.jpeg')} height={278} width={278} alt="Charlie Sparks" />
 								<div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"></div>
 
 								<ul className="list-none absolute right-0 left-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
@@ -62,7 +62,7 @@ const WhoWeAre = () => {
 					<div className="md:col-span-6">
 						<div className="group text-center">
 							<div className="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
-								<Image src={require('../../resources/stephen.jpeg')} height={278} width={278} alt="Stephen Fischer" />
+								<Image priority={true} src={require('../../resources/stephen.jpeg')} height={278} width={278} alt="Stephen Fischer" />
 								<div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"></div>
 								<ul className="list-none absolute right-0 left-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
 									<li className="inline mx-1">
