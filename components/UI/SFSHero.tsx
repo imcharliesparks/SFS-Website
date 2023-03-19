@@ -31,11 +31,11 @@ const SFSHero = () => {
 											Get Started
 										</a>
 									</Link>
-									<Link href="#services">
+									{/* <Link href="#services">
 										<a className="btn bg-transparent hover:bg-blue-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md mx-2 mt-2 w-[160px]">
 											<i className="uil uil-book-alt"></i> More Info
 										</a>
-									</Link>
+									</Link> */}
 								</div>
 							</div>
 						</div>

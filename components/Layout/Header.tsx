@@ -99,30 +99,30 @@ const Header = () => {
 								</button> */}
 							</div>
 							<div>
-								<Link href="#">
-									<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
-										About Us
-									</a>
-								</Link>
 								<ul>
 									<li className="mb-1"></li>
 									<li className="mb-1">
-										<Link href="#">
-											<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+										<Link href="#services">
+											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
 												Services
 											</a>
 										</Link>
 									</li>
 									<li className="mb-1">
-										<Link href="#">
-											<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+										<Link href="#whoWeAre">
+											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
 												Who We Are
 											</a>
 										</Link>
 									</li>
+									{/* <Link href="#whyUs">
+										<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+											Why Us
+										</a>
+									</Link> */}
 									<li className="mb-1">
-										<Link href="#">
-											<a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+										<Link href="#contact">
+											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
 												Contact
 											</a>
 										</Link>

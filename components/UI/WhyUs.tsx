@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
 import { Icon } from 'react-icons-kit'
 import { ic_check_circle_outline } from 'react-icons-kit/md/ic_check_circle_outline'
@@ -51,12 +52,13 @@ const WhyUs = () => {
 						</ul>
 
 						<div className="mt-4">
-							<a
-								href="page-aboutus.html"
-								className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
-							>
-								Find Out More <i className="uil uil-angle-right-b align-middle"></i>
-							</a>
+							<Link href="#contact">
+								<a
+									className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
+								>
+									Find Out More <i className="uil uil-angle-right-b align-middle"></i>
+								</a>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -94,12 +96,13 @@ const WhyUs = () => {
 						</ul>
 
 						<div className="mt-4">
-							<a
-								href="page-aboutus.html"
-								className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
-							>
-								Find Out More <i className="uil uil-angle-right-b align-middle"></i>
-							</a>
+							<Link href="page-aboutus.html">
+								<a
+									className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
+								>
+									Find Out More <i className="uil uil-angle-right-b align-middle"></i>
+								</a>
+							</Link>
 						</div>
 					</div>
 				</div>

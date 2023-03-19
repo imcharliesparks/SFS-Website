@@ -35,7 +35,7 @@ const WhoWeAre = () => {
 								<ul className="list-none absolute right-0 left-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
 									<li className="inline mx-1">
 										<Link href="https://www.linkedin.com/in/sparksfullstack/">
-											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
+											<a target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} className="mb-[2px]" icon={linkedin2} />
 											</a>
 										</Link>
@@ -44,13 +44,6 @@ const WhoWeAre = () => {
 										<Link href="mailto:charlie@sparksfullstack.io">
 											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} icon={ic_email} />
-											</a>
-										</Link>
-									</li>
-									<li className="inline mx-1">
-										<Link href="">
-											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
-												<Icon size={16} icon={ic_person} />
 											</a>
 										</Link>
 									</li>
@@ -74,7 +67,7 @@ const WhoWeAre = () => {
 								<ul className="list-none absolute right-0 left-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
 									<li className="inline mx-1">
 										<Link href="https://www.linkedin.com/in/stephen-fischer-a94bb0b/">
-											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
+											<a target="_blank" rel="noopener noreferrer" className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} className="mb-[2px]" icon={linkedin2} />
 											</a>
 										</Link>
@@ -83,13 +76,6 @@ const WhoWeAre = () => {
 										<Link href="mailto:stephen@sparksfullstack.io">
 											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
 												<Icon size={16} icon={ic_email} />
-											</a>
-										</Link>
-									</li>
-									<li className="inline mx-1">
-										<Link href="">
-											<a className="btn btn-icon btn-sm rounded-full border border-blue-600 bg-blue-600 hover:bg-blue-400 text-white transition-all duration-300 ease-in-out">
-												<Icon size={16} icon={ic_person} />
 											</a>
 										</Link>
 									</li>
