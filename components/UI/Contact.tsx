@@ -10,12 +10,29 @@ const Contact = () => {
 	const businessRef = React.useRef<HTMLInputElement>(null)
 	const phoneRef = React.useRef<HTMLInputElement>(null)
 	const messageRef = React.useRef<HTMLTextAreaElement>(null)
+	const [error, setError] = React.useState<string | null>(null)
+	const [success, setSuccess] = React.useState<string | null>(null)
 
+	React.useEffect(() => {
+		if (error) {
+			setTimeout(() => {
+				setError(null)
+			}, 5000)
+		}
+	}, [error])
+
+	React.useEffect(() => {
+		if (success) {
+			setTimeout(() => {
+				setSuccess(null)
+			}, 5000)
+		}
+	}, [success])
+	
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-		// TODO: Add proper toasts
 		e.preventDefault()
 		if (!nameRef.current?.value || !emailRef.current?.value) {
-			alert('Please fill out all required fields')
+			setError('Please fill out all required fields')
 		}
 
 		try {
@@ -45,18 +62,18 @@ const Contact = () => {
 			})
 			await response.json()
 			if (response.status === 201) {
-				alert('Success! We\'ll be in touch soon!')
+				setSuccess(`Success! We'll be in touch soon!`)
 				nameRef.current!.value = ''
 				emailRef.current!.value = ''
 				businessRef.current!.value = ''
 				phoneRef.current!.value = ''
 				messageRef.current!.value = ''
 			} else {
-				throw new Error('There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io')
+				setError('There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io')
 			}
 		} catch (e) {
 			console.error(e)
-			alert(`There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io`)
+			setError(`There was an error submitting your info! Shoot us an email at charlie@sparksfullstack.io`)
 		} finally {
 			setShowLoadingSpinner(false)
 		}
@@ -159,6 +176,18 @@ const Contact = () => {
 						</form>
 					</div>
 				</div>
+			</div>
+			<div className="toast toast-center z-999">
+				{ error && <div className="alert alert-error w-[300px]">
+					<div>
+						<span>{error}</span>
+					</div>
+				</div> }
+				{ success && <div className="alert alert-success w-[300px]">
+					<div>
+						<span>{success}</span>
+					</div>
+				</div> }
 			</div>
 		</section>
 	)

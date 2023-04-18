@@ -116,5 +116,6 @@ module.exports = {
 							999: '999',
 					},
 			},
-	}
+	},
+	plugins: [require('daisyui')]
 }
