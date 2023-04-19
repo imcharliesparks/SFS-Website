@@ -98,7 +98,7 @@ const WhyUs = () => {
 						</ul>
 
 						<div className="mt-4">
-							<Link href="page-aboutus.html">
+							<Link href="#contact">
 								<a
 									className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
 								>

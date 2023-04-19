@@ -27,7 +27,7 @@ const SFSHero = () => {
 								<div className="mt-6">
 									{/* TODO: Redirect to client application form once flow is completed */}
 									<Link href="#contact">
-										<a className="btn bg-blue-600 hover:bg-blue-400 border-indigo-600 hover:border-indigo-700 text-white rounded-md mx-2 mt-2 w-[160px]">
+										<a className="btn bg-blue-600 hover:bg-blue-400 border-indigo-600 hover:border-indigo-700 text-white rounded-md mx-2 mt-2 w-[160px] pt-[0.75rem]">
 											Get Started
 										</a>
 									</Link>
