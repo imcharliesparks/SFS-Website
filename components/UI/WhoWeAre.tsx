@@ -11,8 +11,8 @@ import { ic_person } from 'react-icons-kit/md/ic_person'
 // TODO: Add email support
 const WhoWeAre = () => {
 	return (
-		<section id="whoWeAre" className="relative md:py-24 py-16">
-			<div className="container">
+		<section id="whoWeAre" className="relative md:py-24 py-16 bg-white">
+			<div className="container bg-inherit">
 				<div className="grid grid-cols-1 pb-8 text-center">
 					<h6 className="text-indigo-600 text-base mb-2">Who We Are</h6>
 					<h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">

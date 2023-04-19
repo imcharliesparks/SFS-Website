@@ -9,8 +9,8 @@ import Link from 'next/link'
 const SFSHero = () => {
 	return (
 		<>
-			<section id="hero" className="relative table w-full md:py-32 lg:py-40 pt-[5rem] xs:pb-10">
-				<div className="mx-auto container">
+			<section id="hero" className="relative table w-full md:py-32 lg:py-40 pt-[5rem] xs:pb-10 bg-white">
+				<div className="mx-auto container bg-inherit">
 					<div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] text-center md:text-left">
 						<div className="md:col-span-7 mb-10 md:mb-0 md:animate-slideLeft xs:animate-slideUp">
 							<div className="md:mr-6">
@@ -50,8 +50,8 @@ const SFSHero = () => {
 					</div>
 				</div>
 			</section>
-			<section className="border-t border-b border-gray-100 dark:border-gray-700">
-				<div className="container">
+			<section className="border-t border-b border-gray-100 dark:border-gray-700 bg-white">
+				<div className="container bg-inherit">
 					<h4 className="text-center text-slate-400 text-1l font-semibold translate-y-[16px]">
 						Our engineers have delivered software for:
 					</h4>
