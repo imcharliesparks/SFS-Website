@@ -17,7 +17,7 @@ const BackToTop = () => {
 				id="back-to-top"
 				className="back-to-top fixed text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center hover:bg-blue-400 bg-blue-600 text-white leading-9 transition-colors ease-in-out"
 			>
-				<Icon className="translate-y-[-3px]" size={24} icon={ic_arrow_upward} />
+				<Icon id="back-to-top-icon" size={24} icon={ic_arrow_upward} />
 			</a>
 		</Link>
 	)
