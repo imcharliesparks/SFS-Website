@@ -1,1 +1,2 @@
 - Implement loading spinner or animation for route changes
+- [] Fix IG browser displaying `up` icon off center
