@@ -28,7 +28,7 @@ const Contact = () => {
 			}, 5000)
 		}
 	}, [success])
-	
+
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		if (!nameRef.current?.value || !emailRef.current?.value) {
@@ -58,7 +58,7 @@ const Contact = () => {
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({ contactFormInput })
+				body: JSON.stringify({ ...contactFormInput })
 			})
 			await response.json()
 			if (response.status === 201) {
@@ -161,15 +161,17 @@ const Contact = () => {
 								<div className="mb-4 flex flex-row justify-center mt-2">
 									<button
 										type="submit"
-										className={`cursor-pointer ${!showLoadingSpinner && 'p-3'} btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]`}
+										className={`cursor-pointer ${
+											!showLoadingSpinner && 'p-3'
+										} btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white rounded-md w-[256px]`}
 									>
-										{ showLoadingSpinner 
-											? (
-												<div className="flex justify-center">
-													<LoadingSpinner/>
-													</div>
-												) 
-											: 'Request More Info' }
+										{showLoadingSpinner ? (
+											<div className="flex justify-center">
+												<LoadingSpinner />
+											</div>
+										) : (
+											'Request More Info'
+										)}
 									</button>
 								</div>
 							</div>
@@ -178,16 +180,20 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className="toast toast-center z-999">
-				{ error && <div className="alert alert-error w-[300px]">
-					<div>
-						<span>{error}</span>
+				{error && (
+					<div className="alert alert-error w-[300px]">
+						<div>
+							<span>{error}</span>
+						</div>
 					</div>
-				</div> }
-				{ success && <div className="alert alert-success w-[300px]">
-					<div>
-						<span>{success}</span>
+				)}
+				{success && (
+					<div className="alert alert-success w-[300px]">
+						<div>
+							<span>{success}</span>
+						</div>
 					</div>
-				</div> }
+				)}
 			</div>
 		</section>
 	)

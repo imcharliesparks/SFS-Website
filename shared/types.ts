@@ -1,4 +1,7 @@
 // TODO: Add linting to organize by type of export
+import { NextApiRequest, NextApiResponse } from 'next'
+import { Send } from 'express-serve-static-core'
+
 // API Types
 export enum APIMethods {
 	POST = 'POST',
@@ -102,4 +105,25 @@ export type ApplicationFormInput = {
 	website?: string
 	email: string
 	phone?: string
+}
+
+export interface TypedRequest<T> extends NextApiRequest {
+	body: T
+}
+
+export interface TypedResponse<T> extends NextApiResponse {
+	json: Send<T, this>
+}
+
+export enum CollectionNames {
+	CONTACT = 'contact'
+}
+
+export enum DocumentResponses {
+	DATA_FOUND = 'DATA_FOUND',
+	DATA_NOT_FOUND = 'DATA_NOT_FOUND',
+	DATA_DELETED = 'DATA_DELETED',
+	DATA_UPDATED = 'DATA_UPDATED',
+	DATA_CREATED = 'DATA_CREATED',
+	DATA_NOT_CREATED = 'DATA_NOT_CREATED'
 }
