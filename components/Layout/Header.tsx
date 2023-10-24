@@ -35,17 +35,17 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className="flex-row visible lg:flex hidden">
-						<Link href="#services">
+						<Link href="/#services">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
 								Services
 							</a>
 						</Link>
-						<Link href="#whoWeAre">
+						<Link href="/#whoWeAre">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
 								About
 							</a>
 						</Link>
-						<Link href="#contact">
+						<Link href="/#contact">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
 								Contact
 							</a>
@@ -71,7 +71,7 @@ const Header = () => {
 								Apply Now
 							</a>
 						</Link> */}
-						<Link href="#contact">
+						<Link href="/#contact">
 							<a
 								className={`${styles['action-buttons']} cursor-pointer bg-blue-600 px-6 py-2.5 rounded-full text-white baseline hover:bg-blue-300 transition-colors text-center`}
 							>
