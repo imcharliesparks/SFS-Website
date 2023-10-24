@@ -50,6 +50,11 @@ const Header = () => {
 								Contact
 							</a>
 						</Link>
+						<Link href="/games">
+							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
+								Games
+							</a>
+						</Link>
 					</div>
 					<div className="flex-row lg:flex hidden">
 						{/* <Link href="#contact">
@@ -103,14 +108,20 @@ const Header = () => {
 									<li className="mb-1"></li>
 									<li className="mb-1">
 										<Link href="#services">
-											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+											<a
+												onClick={() => setIsOpen(false)}
+												className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200"
+											>
 												Services
 											</a>
 										</Link>
 									</li>
 									<li className="mb-1">
 										<Link href="#whoWeAre">
-											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+											<a
+												onClick={() => setIsOpen(false)}
+												className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200"
+											>
 												Who We Are
 											</a>
 										</Link>
@@ -122,7 +133,10 @@ const Header = () => {
 									</Link> */}
 									<li className="mb-1">
 										<Link href="#contact">
-											<a onClick={() => setIsOpen(false)} className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200">
+											<a
+												onClick={() => setIsOpen(false)}
+												className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded transition-all ease-in duration-200"
+											>
 												Contact
 											</a>
 										</Link>
@@ -143,7 +157,10 @@ const Header = () => {
 										</a>
 									</Link> */}
 									<Link href="#contact">
-										<a onClick={() => setIsOpen(false)} className="cursor-pointer block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-400 rounded-xl transition-all ease-in duration-200">
+										<a
+											onClick={() => setIsOpen(false)}
+											className="cursor-pointer block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-400 rounded-xl transition-all ease-in duration-200"
+										>
 											Request Info
 										</a>
 									</Link>
