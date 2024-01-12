@@ -8,7 +8,7 @@ import {
 	TypedRequest
 } from '../../shared/types'
 import { NextApiResponse } from 'next'
-import { addDoc, collection, getDocs, getFirestore } from 'firebase/firestore'
+import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import firebase_app from '../../lib/firebase'
 
 // TODO: Add shape validation here?
