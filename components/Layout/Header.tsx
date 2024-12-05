@@ -50,11 +50,12 @@ const Header = () => {
 								Contact
 							</a>
 						</Link>
-						<Link href="/games">
+						{/* TODO Reinstate once we have actual game stuff */}
+						{/* <Link href="/games">
 							<a className={`${styles['nav-menu-item']} cursor-pointer hover:text-blue-600 transition-colors ease-in-out`}>
 								Games
 							</a>
-						</Link>
+						</Link> */}
 					</div>
 					<div className="flex-row lg:flex hidden">
 						{/* <Link href="#contact">
